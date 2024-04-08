@@ -1,0 +1,12 @@
+{
+  "configType": "ROOT",
+  "metadata": {
+    "cliVersion": "1.4.0"
+  },
+  "resources": {
+    "0623065d-d654-43a8-ae20-4b12ba336e31": {
+      "location": "apps/ruoran's_spectacular_app",
+      "resourceType": "APPLICATION"
+    }
+  }
+}
