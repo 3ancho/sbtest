@@ -6,21 +6,388 @@ layouts:
       apis:
         apiMap: {}
       backgroundColor: none
+      cachedData:
+        pageLoadActions:
+          apiDeps: {}
+          apiNames: []
       canExtend: true
       children:
         - canExtend: true
           children:
             - backgroundColor: none
               canExtend: true
-              children: []
+              children:
+                - animateLoading: true
+                  appMode: EDIT
+                  collapseWhenHidden: true
+                  gridColumns: 24
+                  height:
+                    mode: gridUnit
+                    value: 3
+                  isLoading: false
+                  isVisible: true
+                  left:
+                    mode: gridUnit
+                    value: 0
+                  parentId: dwpvpsnarl
+                  text: Label
+                  textAlign: LEFT
+                  textStyle: LABEL
+                  textType: text
+                  top:
+                    mode: gridUnit
+                    value: 0
+                  type: TEXT_WIDGET
+                  verticalAlign: AUTO
+                  widgetId: lay771yv0p
+                  widgetName: Text1
+                  width:
+                    mode: gridUnit
+                    value: 24
+                - animateLoading: true
+                  appMode: EDIT
+                  cachedColumnSettings: {}
+                  collapseWhenHidden: true
+                  columnOrder:
+                    - photo
+                    - name
+                    - twitter
+                    - date_joined
+                    - email
+                    - action
+                  compactMode: SHORT
+                  defaultFilters: "{}"
+                  defaultSelectedRow: "0"
+                  derivedColumns: {}
+                  dynamicBindingPathList:
+                    - key: primaryColumns.name.linkUrl
+                    - key: primaryColumns.name.linkLabel
+                    - key: primaryColumns.name.computedValue
+                    - key: primaryColumns.name.displayedValue
+                    - key: primaryColumns.twitter.computedValue
+                    - key: primaryColumns.twitter.linkUrl
+                    - key: primaryColumns.twitter.linkLabel
+                    - key: primaryColumns.date_joined.computedValue
+                    - key: primaryColumns.date_joined.linkUrl
+                    - key: primaryColumns.date_joined.linkLabel
+                    - key: primaryColumns.photo.computedValue
+                    - key: primaryColumns.photo.linkUrl
+                    - key: primaryColumns.photo.linkLabel
+                    - key: primaryColumns.photo.displayedValue
+                    - key: primaryColumns.email.computedValue
+                    - key: primaryColumns.email.linkUrl
+                    - key: primaryColumns.email.linkLabel
+                    - key: primaryColumns.email.displayedValue
+                    - key: primaryColumns.action.computedValue
+                    - key: primaryColumns.action.linkUrl
+                    - key: primaryColumns.action.linkLabel
+                    - key: primaryColumns.action.buttonLabel
+                    - key: primaryColumns.action.displayedValue
+                  dynamicTriggerPathList:
+                    - key: primaryColumns.action.onClick
+                    - key: onRowClicked
+                    - key: onSaveChanges
+                    - key: onCancelChanges
+                  gridColumns: 64
+                  height:
+                    mode: gridUnit
+                    value: 30
+                  horizontalAlignment: LEFT
+                  isDownloadable: true
+                  isFilterable: true
+                  isLoading: false
+                  isSearchable: true
+                  isVisible: true
+                  label: Data
+                  left:
+                    mode: gridUnit
+                    value: 13
+                  onCancelChanges:
+                    - id: jegnkv8hys
+                      newWindow: true
+                  onRowClicked:
+                    - id: zw1cv7ol1d
+                      newWindow: true
+                  onSaveChanges:
+                    - id: cb13nka0hp
+                      newWindow: true
+                  pageType: NONE
+                  parentId: dwpvpsnarl
+                  primaryColumns:
+                    action:
+                      buttonLabel: Approve
+                      columnType: button
+                      computedValue: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.action })}}"
+                      enableFilter: true
+                      enableSort: true
+                      headerIcon: ""
+                      headerIconPosition: LEFT
+                      horizontalAlignment: LEFT
+                      id: action
+                      imageBorderRadius:
+                        mode: px
+                        value: 0
+                      imageSize: FIT
+                      index: 5
+                      isDerived: false
+                      isEditableOnInsertion: true
+                      isVisible: true
+                      label: action
+                      linkLabel: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.action })}}"
+                      linkUrl: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.action })}}"
+                      notation: standard
+                      onClick:
+                        - code: showAlert(currentRow.name + ' is approved!', 'success')
+                          id: id0
+                          newWindow: true
+                          type: runJs
+                      openImageUrl: true
+                      openInNewTab: true
+                      tagDisplayConfig: {}
+                      textSize: PARAGRAPH
+                      useLabelAsDisplayValue: true
+                      verticalAlignment: CENTER
+                      width: 150
+                    date_joined:
+                      columnType: date
+                      computedValue: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.date_joined })}}"
+                      enableFilter: true
+                      enableSort: true
+                      headerIcon: ""
+                      headerIconPosition: LEFT
+                      horizontalAlignment: LEFT
+                      id: date_joined
+                      imageBorderRadius:
+                        mode: px
+                        value: 0
+                      imageSize: FIT
+                      index: 2
+                      inputFormat: YYYY-MM-DD
+                      isDerived: false
+                      isEditableOnInsertion: true
+                      isVisible: true
+                      label: date joined
+                      linkLabel: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.date_joined })}}"
+                      linkUrl: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.date_joined })}}"
+                      notation: standard
+                      openImageUrl: true
+                      openInNewTab: true
+                      outputFormat: MM-DD-YYYY
+                      tagDisplayConfig: {}
+                      textSize: PARAGRAPH
+                      useLabelAsDisplayValue: true
+                      verticalAlignment: CENTER
+                      width: 150
+                    email:
+                      columnType: text
+                      computedValue: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.email })}}"
+                      enableFilter: true
+                      enableSort: true
+                      headerIcon: ""
+                      headerIconPosition: LEFT
+                      horizontalAlignment: LEFT
+                      id: email
+                      imageBorderRadius:
+                        mode: px
+                        value: 0
+                      imageSize: FIT
+                      index: 4
+                      isDerived: false
+                      isEditableOnInsertion: true
+                      isVisible: true
+                      label: email
+                      linkLabel: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.email })}}"
+                      linkUrl: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.email })}}"
+                      notation: standard
+                      openImageUrl: true
+                      openInNewTab: true
+                      tagDisplayConfig: {}
+                      textSize: PARAGRAPH
+                      useLabelAsDisplayValue: true
+                      verticalAlignment: CENTER
+                      width: 150
+                    name:
+                      columnType: text
+                      computedValue: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.name })}}"
+                      enableFilter: true
+                      enableSort: true
+                      headerIcon: ""
+                      headerIconPosition: LEFT
+                      horizontalAlignment: LEFT
+                      id: name
+                      imageBorderRadius:
+                        mode: px
+                        value: 0
+                      imageSize: FIT
+                      index: 0
+                      isDerived: false
+                      isEditableOnInsertion: true
+                      isVisible: true
+                      label: name
+                      linkLabel: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.name })}}"
+                      linkUrl: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.name })}}"
+                      notation: standard
+                      openImageUrl: true
+                      openInNewTab: true
+                      tagDisplayConfig: {}
+                      textSize: PARAGRAPH
+                      useLabelAsDisplayValue: true
+                      verticalAlignment: CENTER
+                      width: 150
+                    photo:
+                      columnType: image
+                      computedValue: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.photo })}}"
+                      enableFilter: true
+                      enableSort: true
+                      headerIcon: ""
+                      headerIconPosition: LEFT
+                      horizontalAlignment: LEFT
+                      id: photo
+                      imageBorderRadius:
+                        mode: "%"
+                        value: 50
+                      imageSize: FIXED
+                      index: 3
+                      isDerived: false
+                      isEditableOnInsertion: true
+                      isVisible: true
+                      label: photo
+                      linkLabel: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.photo })}}"
+                      linkUrl: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.photo })}}"
+                      notation: standard
+                      openImageUrl: true
+                      openInNewTab: true
+                      tagDisplayConfig: {}
+                      textSize: PARAGRAPH
+                      useLabelAsDisplayValue: true
+                      verticalAlignment: CENTER
+                      width: 150
+                    twitter:
+                      columnType: link
+                      computedValue: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.twitter })}}"
+                      enableFilter: true
+                      enableSort: true
+                      headerIcon: ""
+                      headerIconPosition: LEFT
+                      horizontalAlignment: LEFT
+                      id: twitter
+                      imageBorderRadius:
+                        mode: px
+                        value: 0
+                      imageSize: FIT
+                      index: 1
+                      isDerived: false
+                      isEditableOnInsertion: true
+                      isVisible: true
+                      label: twitter
+                      linkLabel: "{{Table1.tableDataWithInserts.map((currentRow) => { return '@' +
+                        currentRow.twitter?.split('/').pop()})}}"
+                      linkUrl: "{{Table1.tableDataWithInserts.map((currentRow) => { return
+                        currentRow.twitter })}}"
+                      notation: standard
+                      openImageUrl: true
+                      openInNewTab: true
+                      tagDisplayConfig: {}
+                      textSize: PARAGRAPH
+                      useLabelAsDisplayValue: true
+                      verticalAlignment: CENTER
+                      width: 150
+                  tableData: |-
+                    [
+                      {
+                        "name": "Billie Eilish",
+                        "twitter": "https://twitter.com/billieeilish",
+                        "date_joined": "2019-01-06",
+                        "photo": "https://lowcode.s3-us-west-2.amazonaws.com/billie_eilish.png",
+                        "email": "bad_guy@gmail.com",
+                        "action": ""
+                      },
+                      {
+                        "name": "Thom Yorke",
+                        "twitter": "https://twitter.com/thomyorke",
+                        "date_joined": "2019-01-05",
+                        "photo": "https://lowcode.s3-us-west-2.amazonaws.com/thom_yorke.png",
+                        "email": "karma_police_thom@hotmail.com",
+                        "action": ""
+                      },
+                      {
+                        "name": "Katy Perry",
+                        "twitter": "https://twitter.com/katyperry",
+                        "date_joined": "2019-01-02",
+                        "photo": "https://lowcode.s3-us-west-2.amazonaws.com/katy_perry.png",
+                        "email": "katycat@hotmail.com",
+                        "action": ""
+                      },
+                      {
+                        "name": "Ryan Gosling",
+                        "twitter": "https://twitter.com/RyanGosling",
+                        "date_joined": "2019-01-03",
+                        "photo": "https://lowcode.s3-us-west-2.amazonaws.com/ryan_gosling.png",
+                        "email": "ryan_the_notebook@gmail.com",
+                        "action": ""
+                      },
+                      {
+                        "name": "Dua Lipa",
+                        "twitter": "https://twitter.com/DUALIPA",
+                        "date_joined": "2019-01-07",
+                        "photo": "https://lowcode.s3-us-west-2.amazonaws.com/dua_lipa.png",
+                        "email": "dua_levitating@yahoo.com",
+                        "action": ""
+                      },
+                      {
+                        "name": "Beyonce Knowles",
+                        "twitter": "https://twitter.com/Beyonce",
+                        "date_joined": "2019-01-09",
+                        "photo": "https://lowcode.s3-us-west-2.amazonaws.com/beyonce_knowles.png",
+                        "email": "beyonce_run_the_world@hotmail.com",
+                        "action": ""
+                      },
+                      {
+                        "name": "Lopez Jennifer",
+                        "twitter": "https://twitter.com/JLo",
+                        "date_joined": "2019-01-04",
+                        "photo": "https://lowcode.s3-us-west-2.amazonaws.com/jennifer_lopez.png",
+                        "email": "jenny_from_the_block@yahoo.com",
+                        "action": ""
+                      }
+                    ]
+                  tableHeader: Users
+                  textSize: PARAGRAPH
+                  top:
+                    mode: gridUnit
+                    value: 5
+                  type: TABLE_WIDGET
+                  verticalAlignment: CENTER
+                  widgetId: sjuk8n7m10
+                  widgetName: Table1
+                  width:
+                    mode: gridUnit
+                    value: 64
+              collapseWhenHidden: false
               containerStyle: none
               detachFromLayout: true
               dragDisabled: true
               dynamicBindingPathList: []
               gridColumns: 96
               height:
-                mode: gridUnit
-                value: 99
+                mode: fitContent
+                value: 35
               isLoading: false
               isVisible: true
               layout: FIXED_GRID
@@ -47,7 +414,7 @@ layouts:
           gridColumns: 96
           height:
             mode: fitContent
-            value: 12
+            value: 37
           isLoading: false
           isVisible: true
           left:
@@ -75,7 +442,7 @@ layouts:
       height:
         mode: gridUnit
         value: 99
-      layoutVersion: 2
+      layoutVersion: 3
       left:
         mode: gridUnit
         value: 0
