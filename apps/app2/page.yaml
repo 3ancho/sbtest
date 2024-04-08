@@ -28,7 +28,7 @@ layouts:
                   isVisible: true
                   left:
                     mode: gridUnit
-                    value: 11
+                    value: 33
                   parentId: dwpvpsnarl
                   text: Label
                   textAlign: LEFT
@@ -36,7 +36,7 @@ layouts:
                   textType: text
                   top:
                     mode: gridUnit
-                    value: 7
+                    value: 4
                   type: TEXT_WIDGET
                   verticalAlign: AUTO
                   widgetId: f13wut7ouu
@@ -52,7 +52,7 @@ layouts:
               gridColumns: 96
               height:
                 mode: fitContent
-                value: 10
+                value: 7
               isLoading: false
               isVisible: true
               layout: FIXED_GRID
@@ -79,7 +79,7 @@ layouts:
           gridColumns: 96
           height:
             mode: fitContent
-            value: 12
+            value: 9
           isLoading: false
           isVisible: true
           left:
