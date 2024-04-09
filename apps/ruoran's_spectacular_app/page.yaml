@@ -20,7 +20,7 @@ layouts:
                 - animateLoading: true
                   appMode: EDIT
                   collapseWhenHidden: true
-                  gridColumns: 24
+                  gridColumns: 12
                   height:
                     mode: gridUnit
                     value: 3
@@ -43,7 +43,7 @@ layouts:
                   widgetName: Text1
                   width:
                     mode: gridUnit
-                    value: 24
+                    value: 12
                 - animateLoading: true
                   appMode: EDIT
                   cachedColumnSettings: {}
@@ -88,7 +88,7 @@ layouts:
                     - key: onRowClicked
                     - key: onSaveChanges
                     - key: onCancelChanges
-                  gridColumns: 64
+                  gridColumns: 32
                   height:
                     mode: gridUnit
                     value: 30
@@ -101,7 +101,7 @@ layouts:
                   label: Data
                   left:
                     mode: gridUnit
-                    value: 13
+                    value: 1
                   onCancelChanges:
                     - id: jegnkv8hys
                       newWindow: true
@@ -371,23 +371,23 @@ layouts:
                   textSize: PARAGRAPH
                   top:
                     mode: gridUnit
-                    value: 5
+                    value: 13
                   type: TABLE_WIDGET
                   verticalAlignment: CENTER
                   widgetId: sjuk8n7m10
                   widgetName: Table1
                   width:
                     mode: gridUnit
-                    value: 64
+                    value: 32
               collapseWhenHidden: false
               containerStyle: none
               detachFromLayout: true
               dragDisabled: true
               dynamicBindingPathList: []
-              gridColumns: 96
+              gridColumns: 48
               height:
                 mode: fitContent
-                value: 35
+                value: 43
               isLoading: false
               isVisible: true
               layout: FIXED_GRID
@@ -407,14 +407,69 @@ layouts:
               widgetName: Canvas1
               width:
                 mode: gridUnit
+                value: 48
+            - appMode: EDIT
+              canExtend: true
+              children:
+                - animateLoading: true
+                  appMode: EDIT
+                  collapseWhenHidden: true
+                  gridColumns: 24
+                  height:
+                    mode: gridUnit
+                    value: 3
+                  isLoading: false
+                  isVisible: true
+                  left:
+                    mode: gridUnit
+                    value: 11
+                  parentId: opg8su17dq
+                  text: Label
+                  textAlign: LEFT
+                  textStyle: LABEL
+                  textType: text
+                  top:
+                    mode: gridUnit
+                    value: 10
+                  type: TEXT_WIDGET
+                  verticalAlign: AUTO
+                  widgetId: 2ae660mqqv
+                  widgetName: Text2
+                  width:
+                    mode: gridUnit
+                    value: 24
+              collapseWhenHidden: true
+              detachFromLayout: true
+              gridColumns: 48
+              height:
+                mode: fitContent
+                value: 43
+              isLoading: false
+              isVisible: true
+              left:
+                mode: gridUnit
                 value: 0
+              parentId: lm2jrimm2x
+              shouldScrollContents: true
+              spacing:
+                mode: px
+                value: 12
+              top:
+                mode: gridUnit
+                value: 0
+              type: CANVAS_WIDGET
+              widgetId: opg8su17dq
+              widgetName: Canvas2
+              width:
+                mode: gridUnit
+                value: 48
           collapseWhenHidden: true
           detachFromLayout: true
           dragDisabled: true
           gridColumns: 96
           height:
             mode: fitContent
-            value: 37
+            value: 45
           isLoading: false
           isVisible: true
           left:
